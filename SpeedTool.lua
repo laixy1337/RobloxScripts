@@ -6,7 +6,4 @@ tool.Equipped:Connect(function()
       game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 150
     end
 end)
-tool.Unequipped:Connect(function()
-    break
-end)
 tool.Parent = game.Players.LocalPlayer.Backpack
