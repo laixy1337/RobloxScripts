@@ -1,14 +1,14 @@
 tool = Instance.new("Tool")
 tool.RequiresHandle = false
 tool.Name = "Speed Tool"
-tool.Equipped:connect(function()
+if tool.Equipped == true then
     while wait() do
       game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 150
     end
-end)
-tool.UnEquipped:connect(function()
+end
+if tool.Equipped == false then
     while wait() do
       game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
     end
-end)
+end
 tool.Parent = game.Players.LocalPlayer.Backpack
